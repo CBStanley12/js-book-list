@@ -5,3 +5,5 @@ class Book {
 		this.isbn = isbn;
 	}
 }
+
+class UI {}
