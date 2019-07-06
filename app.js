@@ -33,3 +33,31 @@ UI.prototype.clearFields = function() {
 	document.getElementById('author').value = '';
 	document.getElementById('isbn').value = '';
 }
+
+// Event Listeners
+document.getElementById('book-form').addEventListener('submit', function(e) {
+	// Get form values
+	const title = document.getElementById('title').value,
+				author = document.getElementById('author').value,
+				isbn = document.getElementById('isbn').value;
+	
+	// Instantiate a book
+	const book = new Book(title, author, isbn);
+
+	// Instantiate UI
+	const ui = new UI();
+
+	// Validate
+	if (title === '' || author === '' || isbn === '') {
+		ui.showAlert('Please fill in all fields', 'error');
+	} else {
+		// Add book to list
+		ui.addBookToList(book);
+		// Show success alert
+		ui.showAlert('Book Added!', 'success');
+		// Clear fields
+		ui.clearFields();
+	}
+
+	e.preventDefault();
+});
