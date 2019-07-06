@@ -48,6 +48,13 @@ UI.prototype.showAlert = function(message, className) {
 	}, 3000);
 }
 
+// Delete book
+UI.prototype.deleteBook = function(target) {
+	if (target.className === 'delete') {
+		target.parentElement.parentElement.remove();
+	}
+}
+
 // Clear fields
 UI.prototype.clearFields = function() {
 	document.getElementById('title').value = '';
