@@ -81,6 +81,14 @@ class Store {
 			ui.addBookToList(book);
 		});
 	}
+
+	static addBook(book) {
+		const books = Store.getBooks();
+
+		books.push(book);
+
+		localStorage.setItem('books', JSON.stringify(books));
+	}
 }
 
 // Event listener for add book
