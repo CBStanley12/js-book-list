@@ -26,3 +26,10 @@ UI.prototype.addBookToList = function(book) {
 	// Append row to table
 	list.appendChild(row);
 }
+
+// Clear fields
+UI.prototype.clearFields = function() {
+	document.getElementById('title').value = '';
+	document.getElementById('author').value = '';
+	document.getElementById('isbn').value = '';
+}
