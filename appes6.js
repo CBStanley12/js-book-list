@@ -23,6 +23,12 @@ class UI {
 
 		list.appendChild(row);
 	}
+
+	clearFields() {
+		document.getElementById('title').value = '';
+		document.getElementById('author').value = '';
+		document.getElementById('isbn').value = '';
+	}
 }
 
 // Event listener for add book
