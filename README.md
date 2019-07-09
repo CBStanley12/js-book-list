@@ -21,9 +21,15 @@ Complete:
 - [X] Book list persists in user's localStorage
 
 ## Screenshots
-![JS Book List - Example Screenshot One](./images/book-list1.png)
+![JS Book List - Example Screenshot](./images/book-list1.png)
 
-![JS Book List - Example Screenshot Two](./images/book-list2.png)
+![Example Gif - Add Book to List](./images/book-list.gif)
+
+![JS Book List - Example Screenshot](./images/book-list2.png)
+
+![Example Gif - Delete Book from List](./images/book-list1.gif)
+
+![Example Gif - Incomplete Form Error](./images/book-list2.gif)
 
 ## Technologies
 Built with:
